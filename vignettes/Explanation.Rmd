@@ -24,6 +24,31 @@ library(thecentraldogma)
 
 ## replacement_of_matches
 
+Description:
+
+-   Takes a DNA sequence and replaces all "T" with "U" resulting in the corresponding RNA sequence.
+
+Parameters:
+
+-   DNA_sequence: must be a string
+
+Function:
+
+-   gsub: replacement of matches
+
+Usage:
+
+```         
+replace_T_with_U(DNA_sequence)
+```
+
+Examples:
+
+```{r}
+RNA_sequence <- replace_T_with_U(DNA_sequence = "GATTA")
+print(RNA_sequence)
+```
+
 ## seq_to_codons
 
 ## translate_codons
