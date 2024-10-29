@@ -3,8 +3,11 @@ title: "Explanation"
 output: rmarkdown::pdf_document
 vignette: >
   %\VignetteIndexEntry{Explanation}
-  %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{knitr::rmarkdown}
+editor_options: 
+  markdown: 
+    wrap: 72
 ---
 
 ```{r, include = FALSE}
@@ -27,5 +30,21 @@ library(thecentraldogma)
 ## seq_to_codons
 
 ## translate_codons
+
+**Description\
+**The function translate_codons translates a vector containing
+nucleotide triplet(s) (codons) to a single string of amino acids.
+
+**Parameters**\
+"codons" is a vector containing triplet(s) of nucleotides.\
+"standard_codon_table" is a predefined table containing the standard
+codons and their corresponding amino acid.
+
+**Example usage**
+
+```{r}
+codons <- c("AUG", "UUU", "UGA") 
+translate_codons(codons) 
+```
 
 ## plot_count
