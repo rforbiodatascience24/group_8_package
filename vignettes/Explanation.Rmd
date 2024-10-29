@@ -18,12 +18,14 @@ knitr::opts_chunk$set(
 library(thecentraldogma)
 ```
 
-# random_dna
+# Packages description
 
-# replacement_of_matches
+## random_dna
 
-# seq_to_codons
+## replacement_of_matches
 
-# translate_codons
+## seq_to_codons
 
-# plot_count
+## translate_codons
+
+## plot_count
