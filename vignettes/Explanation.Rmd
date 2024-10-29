@@ -25,11 +25,13 @@ library(thecentraldogma)
 
 ## random_dna
 
-**Description:** The random_dna function creates a random string of DNA of nucleic bases (A,T,G,C) with a user defined lenght.
+**Description:** The random_dna function creates a random string of DNA
+of nucleic bases (A,T,G,C) with a user defined lenght.
 
 **Parameters:**
 
-**lenght_of_DNA:** must be an integer. Defines the lenght of the DNA string.
+**lenght_of_DNA:** must be an integer. Defines the lenght of the DNA
+string.
 
 Examples:
 
@@ -42,7 +44,8 @@ random_dna(lenght_of_dna = 10)
 
 Description:
 
--   Takes a DNA sequence and replaces all "T" with "U" resulting in the corresponding RNA sequence.
+-   Takes a DNA sequence and replaces all "T" with "U" resulting in the
+    corresponding RNA sequence.
 
 Parameters:
 
@@ -89,9 +92,11 @@ translate_codons(codons)
 
 This function plots the frequency of amino acids.
 
-The parameter *input_string* is a character string that is analyzed for unique character frequencies.
+The parameter *input_string* is a character string that is analyzed for
+unique character frequencies.
 
-The function uses the packages stringr to split a string then counts frequency of character. Lastly it plots the frequency in columns.
+The function uses the packages stringr to split a string then counts
+frequency of character. Lastly it plots the frequency in columns.
 
 **Example:**
 
