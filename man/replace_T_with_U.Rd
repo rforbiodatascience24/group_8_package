@@ -16,5 +16,5 @@ RNA sequence
 Replace T with U
 }
 \examples{
-replace_T_with_U(GATTA)
+replace_T_with_U(DNA_sequence = "GATTA")
 }
