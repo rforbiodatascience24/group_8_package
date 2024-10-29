@@ -1,6 +1,6 @@
 ---
 title: "Explanation"
-output: rmarkdown::html_vignette
+output: rmarkdown::pdf_document
 vignette: >
   %\VignetteIndexEntry{Explanation}
   %\VignetteEngine{knitr::rmarkdown}
@@ -17,3 +17,13 @@ knitr::opts_chunk$set(
 ```{r setup}
 library(thecentraldogma)
 ```
+
+# random_dna
+
+# replacement_of_matches
+
+# seq_to_codons
+
+# translate_codons
+
+# plot_count
