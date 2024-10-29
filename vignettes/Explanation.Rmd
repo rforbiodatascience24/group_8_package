@@ -78,6 +78,7 @@ seq_to_codons(sequence, start = 1)
 
 |            |                                                                                      |
 |-------------|-----------------------------------------------------------|
+|------------|--------------------------------------------------------------------------------------|
 | `sequence` | A nucleotide sequence                                                                |
 | `start`    | The first position in the nucleotide sequence that should start the codon splitting. |
 
