@@ -76,6 +76,7 @@ The function uses the packages stringr to split a string then counts frequency o
 
 **Example:**
 
-plot \<- amino_frequency_plot_local("AABBCDAA")
-
+```{r}
+plot <- amino_frequency_plot_local("SYRKHDAPNA")
 print(plot)
+```
