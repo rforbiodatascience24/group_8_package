@@ -3,8 +3,11 @@ title: "Explanation"
 output: rmarkdown::pdf_document
 vignette: >
   %\VignetteIndexEntry{Explanation}
-  %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{knitr::rmarkdown}
+editor_options: 
+  markdown: 
+    wrap: 72
 ---
 
 ```{r, include = FALSE}
@@ -22,11 +25,13 @@ library(thecentraldogma)
 
 ## random_dna
 
-**Description:** The random_dna function creates a random string of DNA of nucleic bases (A,T,G,C) with a user defined lenght.
+**Description:** The random_dna function creates a random string of DNA
+of nucleic bases (A,T,G,C) with a user defined lenght.
 
 **Parameters:**
 
-**lenght_of_DNA:** must be an integer. Defines the lenght of the DNA string.
+**lenght_of_DNA:** must be an integer. Defines the lenght of the DNA
+string.
 
 Examples:
 
@@ -39,7 +44,8 @@ random_dna(lenght_of_dna = 10)
 
 Description:
 
--   Takes a DNA sequence and replaces all "T" with "U" resulting in the corresponding RNA sequence.
+-   Takes a DNA sequence and replaces all "T" with "U" resulting in the
+    corresponding RNA sequence.
 
 Parameters:
 
@@ -66,7 +72,8 @@ print(RNA_sequence)
 
 **Description**
 
-seq_to_codons is a function that takes a nucleotide sequence and splits it into the codons, starting at the position specified.
+seq_to_codons is a function that takes a nucleotide sequence and splits
+it into the codons, starting at the position specified.
 
 **Usage**
 
@@ -75,11 +82,11 @@ seq_to_codons(sequence, start = 1)
 ```
 
 **Arguments**
-
-|            |                                                                                      |
-|------------|--------------------------------------------------------------------------------------|
-| `sequence` | A nucleotide sequence                                                                |
-| `start`    | The first position in the nucleotide sequence that should start the codon splitting. |
+|              |                                                                                        |
+|--------------|----------------------------------------------------------------------------------------|
+| ------------ | -------------------------------------------------------------------------------------- |
+| `sequence`   | A nucleotide sequence                                                                  |
+| `start`      | The first position in the nucleotide sequence that should start the codon splitting.   |
 
 The codons of the input sequence is outputted as a vector of strings.
 
@@ -91,13 +98,31 @@ seq_to_codons("ACTGATCATGA", start=1)
 
 ## translate_codons
 
+**Description\
+**The function translate_codons translates a vector containing
+nucleotide triplet(s) (codons) to a single string of amino acids.
+
+**Parameters**\
+"codons" is a vector containing triplet(s) of nucleotides.\
+"standard_codon_table" is a predefined table containing the standard
+codons and their corresponding amino acid.
+
+**Example usage**
+
+```{r}
+codons <- c("AUG", "UUU", "UGA") 
+translate_codons(codons) 
+```
+
 ## plot_count
 
 This function plots the frequency of amino acids.
 
-The parameter *input_string* is a character string that is analyzed for unique character frequencies.
+The parameter *input_string* is a character string that is analyzed for
+unique character frequencies.
 
-The function uses the packages stringr to split a string then counts frequency of character. Lastly it plots the frequency in columns.
+The function uses the packages stringr to split a string then counts
+frequency of character. Lastly it plots the frequency in columns.
 
 **Example:**
 
