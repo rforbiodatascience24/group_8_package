@@ -84,7 +84,9 @@ seq_to_codons(sequence, start = 1)
 **Arguments**
 
 sequence: A nucleotide sequence
-start: The first position in the nucleotide sequence that should start the codon splitting.
+
+start: The first position in the nucleotide sequence that should start
+the codon splitting.
 
 The codons of the input sequence is outputted as a vector of strings.
 
