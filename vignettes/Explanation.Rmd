@@ -22,7 +22,45 @@ library(thecentraldogma)
 
 ## random_dna
 
+**Description:** The random_dna function creates a random string of DNA of nucleic bases (A,T,G,C) with a user defined lenght.
+
+**Parameters:**
+
+**lenght_of_DNA:** must be an integer. Defines the lenght of the DNA string.
+
+Examples:
+
+```{r}
+random_dna(lenght_of_dna = 10)
+#Outputs a string of dna bases that's 10 long.
+```
+
 ## replacement_of_matches
+
+Description:
+
+-   Takes a DNA sequence and replaces all "T" with "U" resulting in the corresponding RNA sequence.
+
+Parameters:
+
+-   DNA_sequence: must be a string
+
+Function:
+
+-   gsub: replacement of matches
+
+Usage:
+
+```         
+replace_T_with_U(DNA_sequence)
+```
+
+Examples:
+
+```{r}
+RNA_sequence <- replace_T_with_U(DNA_sequence = "GATTA")
+print(RNA_sequence)
+```
 
 ## seq_to_codons
 
