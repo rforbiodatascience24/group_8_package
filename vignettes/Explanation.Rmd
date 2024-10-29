@@ -23,6 +23,9 @@ library(thecentraldogma)
 
 # Packages description
 
+A collection of packages containing functions to work with sequences of
+DNA and RNA including relevant objects and tables.
+
 ## random_dna
 
 **Description:** The random_dna function creates a random string of DNA
@@ -83,8 +86,8 @@ seq_to_codons(sequence, start = 1)
 
 **Arguments**
 
-sequence: A nucleotide sequence
-start: The first position in the nucleotide sequence that should start the codon splitting.
+sequence: A nucleotide sequence start: The first position in the
+nucleotide sequence that should start the codon splitting.
 
 The codons of the input sequence is outputted as a vector of strings.
 
