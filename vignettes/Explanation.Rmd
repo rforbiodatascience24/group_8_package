@@ -130,3 +130,5 @@ frequency of character. Lastly it plots the frequency in columns.
 plot <- amino_frequency_plot_local("SYRKHDAPNA")
 print(plot)
 ```
+
+hej
