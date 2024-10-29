@@ -22,6 +22,19 @@ library(thecentraldogma)
 
 ## random_dna
 
+**Description:** The random_dna function creates a random string of DNA of nucleic bases (A,T,G,C) with a user defined lenght.
+
+**Parameters:**
+
+**lenght_of_DNA:** must be an integer. Defines the lenght of the DNA string.
+
+Examples:
+
+```{r}
+random_dna(lenght_of_dna = 10)
+#Outputs a string of dna bases that's 10 long.
+```
+
 ## replacement_of_matches
 
 ## seq_to_codons
