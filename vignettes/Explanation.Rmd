@@ -75,29 +75,6 @@ print(RNA_sequence)
 seq_to_codons is a function that takes a nucleotide sequence and splits
 it into the codons, starting at the position specified.
 
-**Usage**
-
-```         
-seq_to_codons(sequence, start = 1)
-```
-
-<<<<<<< HEAD
-**Arguments** \| \| \|
-\|--------------\|----------------------------------------------------------------------------------------\|
-\| ------------ \|
---------------------------------------------------------------------------------------
-\| \| `sequence` \| A nucleotide sequence \| \| `start` \| The first
-position in the nucleotide sequence that should start the codon
-splitting. \|
-=======
-**Arguments**
-
-sequence: A nucleotide sequence
-
-start: The first position in the nucleotide sequence that should start
-the codon splitting.
->>>>>>> a0437da7f26a8e84e805b2f1aa44453cf1efe8db
-
 The codons of the input sequence is outputted as a vector of strings.
 
 **Examples**
