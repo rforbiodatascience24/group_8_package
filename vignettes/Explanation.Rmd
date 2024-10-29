@@ -29,3 +29,15 @@ library(thecentraldogma)
 ## translate_codons
 
 ## plot_count
+
+This function plots the frequency of amino acids.
+
+The parameter *input_string* is a character string that is analyzed for unique character frequencies.
+
+The function uses the packages stringr to split a string then counts frequency of character. Lastly it plots the frequency in columns.
+
+**Example:**
+
+plot \<- amino_frequency_plot_local("AABBCDAA")
+
+print(plot)
